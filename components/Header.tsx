@@ -8,7 +8,6 @@ import {
 } from "@dynamic-labs/sdk-react-core";
 import { EthersExtension } from "@dynamic-labs/ethers-v5";
 import { ZeroDevSmartWalletConnectors } from "@dynamic-labs/ethereum-aa";
-
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
 import { Component } from "react";
 
@@ -48,6 +47,13 @@ export default function Header() {
                 {/* <ConnectButton showBalance={{smallScreen: true, largeScreen: false}} /> */}
                 <DynamicContextProvider
                   settings={{
+                    eventsCallbacks: {
+                      onAuthSuccess: (args) => {
+                        if (args.user.newUser) {
+                          console.log("This is a new user")
+                        }
+                      },
+                    },
                     environmentId: 'c60619c9-3497-465d-9dbc-5562332d39fd',
                     walletConnectors: [EthereumWalletConnectors, ZeroDevSmartWalletConnectors]
                   }}>
