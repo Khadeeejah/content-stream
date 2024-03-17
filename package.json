@@ -1,0 +1,38 @@
+{
+    "name": "celo-bunzz-hackhaton",
+    "version": "1.0.0",
+    "description": "Custom Celo Composer project.",
+    "private": true,
+    "author": "Celo",
+    "license": "MIT",
+    "scripts": {
+        "react-app:dev": "yarn workspace @celo-bunzz-hackhaton/react-app dev",
+        "react-app:build": "yarn workspace @celo-bunzz-hackhaton/react-app build",
+        "react-app:start": "yarn workspace @celo-bunzz-hackhaton/react-app start",
+        "react-app:lint": "yarn workspace @celo-bunzz-hackhaton/react-app lint",
+        "hardhat:test": "yarn workspace @celo-bunzz-hackhaton/hardhat test",
+        "hardhat:test-local": "yarn workspace @celo-bunzz-hackhaton/hardhat test-local",
+        "hardhat:create-account": "yarn workspace @celo-bunzz-hackhaton/hardhat create-account",
+        "hardhat:accounts": "yarn workspace @celo-bunzz-hackhaton/hardhat accounts",
+        "hardhat:devchain": "yarn workspace @celo-bunzz-hackhaton/hardhat devchain",
+        "hardhat:deploy": "yarn workspace @celo-bunzz-hackhaton/hardhat deploy",
+        "hardhat:deploy-reset-watch": "yarn workspace @celo-bunzz-hackhaton/hardhat deploy-reset-watch",
+        "hardhat:watch": "yarn workspace @celo-bunzz-hackhaton/hardhat watch",
+        "hardhat:fork-mainnet": "yarn workspace @celo-bunzz-hackhaton/hardhat fork-mainnet"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celo-org/celo-composer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/celo-org/celo-composer/issues"
+    },
+    "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+    "workspaces": [
+        "packages/*"
+    ],
+    "keywords": [
+        "celo-composer",
+        "celo"
+    ]
+}
